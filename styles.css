@@ -1,0 +1,41 @@
+main{
+    max-width: 900px;
+    text-align: center;
+    
+}
+
+main img{
+   width: 800px;
+   height: auto;
+   
+}
+
+h1{
+    background-color: rgb(238, 238, 241);
+}
+
+aside{
+    width: 60rem;
+    margin: 1rem;
+    border: 1 px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: rgb(238, 238, 241);
+    color:blueviolet;
+    text-align: center;
+    
+}
+
+aside img{
+    width: 200px;
+    height:auto;
+}
+
+p{
+    padding: 0;
+}
+
+footer{
+    margin-top: 1em;
+    border-top: 1 px solid #000;
+    text-align: center;
+}
