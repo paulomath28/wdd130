@@ -1,1 +1,59 @@
+@import url('https://fonts.google.com/specimen/Martian+Mono');
 
+:root {
+    --primary-color: #00A8E8;
+    --secondary-color: #c1121f;
+    --accent1-color: #6fec88;
+    --accent2-color: #d77363;
+
+    --heading-font: 'Martian Mono', monospace;
+    --paragraph-font: 'Martian Mono', monospace;
+
+    --nav-background-color: rgb(14, 209, 60);
+    --nav-link-color: red;
+    --nav-hover-link-color: green;
+    --nav-hover-background-color: orange;
+
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #03045e;
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--accent2-color);
+    font-size: 1.2rem;
+    display:flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
