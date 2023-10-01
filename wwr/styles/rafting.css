@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Your+Selected+Font');
+
+:root {
+    --primary-color: #0066cc; /* Change to your chosen primary color */
+    --secondary-color: #ff9900; /* Change to your chosen secondary color */
+    --font-family: 'Your Selected Font', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+h1, h2, p {
+    color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.sociallinks a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: #fff;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+article {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+article img {
+    float: right;
+    margin-left: 20px;
+}
+
+section h2 {
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px 0;
+}
+
+.sociallinks {
+    margin-top: 10px;
+}
+
+.sociallinks img {
+    width: 30px;
+    margin: 0 10px;
+}
