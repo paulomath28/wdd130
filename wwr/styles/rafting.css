@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Your+Selected+Font');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
     --primary-color: #0066cc; /* Change to your chosen primary color */
@@ -6,8 +6,44 @@
     --font-family: 'Your Selected Font', sans-serif;
 }
 
-body {
-    font-family: var(--font-family);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto; /* Create a two-column grid */
+    align-items: center;
+    padding: 10px;
+}
+
+.header-logo {
+    display: flex; /* Create a horizontal layout for the logo and navigation bar */
+    align-items: center;
+}
+
+.nav {
+    display: flex; /* Create a horizontal layout for the navigation links */
+    gap: 20px; /* Add spacing between the links */
+}
+
+/* Adjust the styles for the logo and navigation links as needed */
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+
+header, main, footer {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 h1, h2, p {
@@ -24,27 +60,42 @@ a {
 
 .hero {
     position: relative;
-    width: 100%;
+    margin-top: 1rem;
 }
 
 .hero img {
-    display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 
-h1 {
+.hero article {
     position: absolute;
-    top: 20%;
-    left: 10%;
+    bottom: 50px;
+    left: 10px;
+    margin: 10px;
+    font-size: smaller;
+    opacity: .8;
+    text-align: justify;
+
+}
+
+.hero h1 {
+    position: absolute;
+    top: 10px;
+    left: 20px;
     color: #fff;
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero article img {
+    width: 155px;
+    height: auto;
+    float: top;
 }
 
 article {
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 10%;
     background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
@@ -64,10 +115,11 @@ section h2 {
 
 footer {
     text-align: center;
-    background-color: var(--primary-color);
-    color: #fff;
+    background-color: rgb(217, 133, 133);
+    color: #f7f8f7;;
     padding: 20px 0;
 }
+
 
 .sociallinks {
     margin-top: 10px;
@@ -76,4 +128,28 @@ footer {
 .sociallinks img {
     width: 30px;
     margin: 0 10px;
+}
+
+.adventures {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+figure {
+    text-align: center;
+    margin: 0 10px; /* Add spacing between images */
+}
+
+figure img {
+    max-width: 150px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    margin-top: 5px;
+    font-size: smaller;
 }
