@@ -3,21 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/contact.css">
-    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+    <title>Contact</title>
+    <meta name="description" content="The rafting site plan includes the site purp">
+    <meta name="author" content="Paulo Nascimento">
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+    
+    .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.contact-form {
+    flex: 1.5;
+}
+
+.contact-details {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.contact-details p {
+    margin: 8px 0;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}        
+
+footer {
+    background-color:#a2e2a6;
+    color:#000;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+    </style>
 </head>
 <body>
     <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo.png" alt="Awesome Rafting Logo">
+        </a>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
     <div class="container">
         <h1>Contact Us</h1>
-        <img src="images/logo.png" width="120" alt="Our logo">
+        
         <div class="contact-content">
             <div class="contact-form">
                 <form>
@@ -54,22 +144,25 @@
                 <p><strong>Contact:</strong> (123) 456-7890</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24989.278278163074!2d-105.257492!3d38.472415!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87148fd1b5593865%3A0x3035e0cf899b1939!2sArkansas%20River%20Tours%20-%20Royal%20Gorge%20Office!5e0!3m2!1sen!2sin!4v1697326012958!5m2!1sen!2sin" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            
         </div>
+
     </div>
-    <footer>
-        <p>&#169; 2023 The White Water Rafting Company. Created by Paulo Nascimento</p>
-        <nav class="sociallinks">
-            <a href="https://facebook.com">
-                <img src="images/facebook.png" alt="Facebook" width="90" height="40">
+      <footer>
+        <p>Perfect Adventure &copy; 2023 - created by Paulo Nascimento</p>
+        <p><a href="site-plan-rafting.html">Site Plan</a></p>
+        <p><a href="contactus.html">Contact Us</a></p>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
             </a>
-            <a href="https://twitter.com">
-                <img src="images/twitter.png" alt="Twitter" width="90" height="40">
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
             </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.png" alt="Instagram" width="90" height="40">
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
             </a>
-        </nav>
+        </div>
     </footer>
+    
 </body>
 </html>
